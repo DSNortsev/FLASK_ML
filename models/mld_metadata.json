@@ -1,0 +1,31 @@
+{
+    "x5": [
+        "monday",
+        "saturday",
+        "sunday",
+        "thursday",
+        "tuesday",
+        "wednesday"
+    ],
+    "x31": [
+        "asia",
+        "germany",
+        "japan"
+    ],
+    "x81": [
+        "August",
+        "December",
+        "February",
+        "January",
+        "July",
+        "June",
+        "March",
+        "May",
+        "November",
+        "October",
+        "September"
+    ],
+    "x82": [
+        "Male"
+    ]
+}

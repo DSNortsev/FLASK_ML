@@ -1,0 +1,11 @@
+Flask==1.1.2
+numpy==1.19.4
+pandas==1.1.5
+sklearn==0.0
+statsmodels==0.12.1
+pickle-mixin==1.0.2
+requests==2.25.1
+flask-expects-json==1.5.0
+
+
+

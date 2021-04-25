@@ -1,0 +1,411 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": ["object","array"],
+  "items": {
+      "type": "object",
+      "properties": {
+        "x0": {
+          "type": ["number", "null"]
+        },
+        "x1": {
+          "type": ["number", "null"]
+        },
+        "x2": {
+          "type": ["number", "null"]
+        },
+        "x3": {
+          "type": ["number", "null"]
+        },
+        "x4": {
+          "type": ["number", "null"]
+        },
+        "x5": {
+          "type": ["string", "null"]
+        },
+        "x6": {
+          "type": ["number", "null"]
+        },
+        "x7": {
+          "type": ["number", "null"]
+        },
+        "x8": {
+          "type": ["number", "null"]
+        },
+        "x9": {
+          "type": ["number", "null"]
+        },
+        "x10": {
+          "type": ["number", "null"]
+        },
+        "x11": {
+          "type": ["number", "null"]
+        },
+        "x12": {
+          "type": ["string", "null"]
+        },
+        "x13": {
+          "type": ["number", "null"]
+        },
+        "x14": {
+          "type": ["number", "null"]
+        },
+        "x15": {
+          "type": ["number", "null"]
+        },
+        "x16": {
+          "type": ["number", "null"]
+        },
+        "x17": {
+          "type": ["number", "null"]
+        },
+        "x18": {
+          "type": ["number", "null"]
+        },
+        "x19": {
+          "type": ["number", "null"]
+        },
+        "x20": {
+          "type": ["number", "null"]
+        },
+        "x21": {
+          "type": ["number", "null"]
+        },
+        "x22": {
+          "type": ["number", "null"]
+        },
+        "x23": {
+          "type": ["number", "null"]
+        },
+        "x24": {
+          "type": ["number", "null"]
+        },
+        "x25": {
+          "type": ["number", "null"]
+        },
+        "x26": {
+          "type": ["number", "null"]
+        },
+        "x27": {
+          "type": ["number", "null"]
+        },
+        "x28": {
+          "type": ["number", "null"]
+        },
+        "x29": {
+          "type": ["number", "null"]
+        },
+        "x30": {
+          "type": ["number", "null"]
+        },
+        "x31": {
+          "type": ["string", "null"]
+        },
+        "x32": {
+          "type": ["number", "null"]
+        },
+        "x33": {
+          "type": ["number", "null"]
+        },
+        "x34": {
+          "type": ["number", "null"]
+        },
+        "x35": {
+          "type": ["number", "null"]
+        },
+        "x36": {
+          "type": ["number", "null"]
+        },
+        "x37": {
+          "type": ["number", "null"]
+        },
+        "x38": {
+          "type": ["number", "null"]
+        },
+        "x39": {
+          "type": ["number", "null"]
+        },
+        "x40": {
+          "type": ["number", "null"]
+        },
+        "x41": {
+          "type": ["number", "null"]
+        },
+        "x42": {
+          "type": ["number", "null"]
+        },
+        "x43": {
+          "type": ["number", "null"]
+        },
+        "x44": {
+          "type": ["number", "null"]
+        },
+        "x45": {
+          "type": ["number", "null"]
+        },
+        "x46": {
+          "type": ["number", "null"]
+        },
+        "x47": {
+          "type": ["number", "null"]
+        },
+        "x48": {
+          "type": ["number", "null"]
+        },
+        "x49": {
+          "type": ["number", "null"]
+        },
+        "x50": {
+          "type": ["number", "null"]
+        },
+        "x51": {
+          "type": ["number", "null"]
+        },
+        "x52": {
+          "type": ["number", "null"]
+        },
+        "x53": {
+          "type": ["number", "null"]
+        },
+        "x54": {
+          "type": ["number", "null"]
+        },
+        "x55": {
+          "type": ["number", "null"]
+        },
+        "x56": {
+          "type": ["number", "null"]
+        },
+        "x57": {
+          "type": ["number", "null"]
+        },
+        "x58": {
+          "type": ["number", "null"]
+        },
+        "x59": {
+          "type": ["number", "null"]
+        },
+        "x60": {
+          "type": ["number", "null"]
+        },
+        "x61": {
+          "type": ["number", "null"]
+        },
+        "x62": {
+          "type": ["number", "null"]
+        },
+        "x63": {
+          "type": ["string", "null"]
+        },
+        "x64": {
+          "type": ["number", "null"]
+        },
+        "x65": {
+          "type": ["number", "null"]
+        },
+        "x66": {
+          "type": ["number", "null"]
+        },
+        "x67": {
+          "type": ["number", "null"]
+        },
+        "x68": {
+          "type": ["number", "null"]
+        },
+        "x69": {
+          "type": ["number", "null"]
+        },
+        "x70": {
+          "type": ["number", "null"]
+        },
+        "x71": {
+          "type": ["number", "null"]
+        },
+        "x72": {
+          "type": ["number", "null"]
+        },
+        "x73": {
+          "type": ["number", "null"]
+        },
+        "x74": {
+          "type": ["number", "null"]
+        },
+        "x75": {
+          "type": ["number", "null"]
+        },
+        "x76": {
+          "type": ["number", "null"]
+        },
+        "x77": {
+          "type": ["number", "null"]
+        },
+        "x78": {
+          "type": ["number", "null"]
+        },
+        "x79": {
+          "type": ["number", "null"]
+        },
+        "x80": {
+          "type": ["number", "null"]
+        },
+        "x81": {
+          "type": ["string", "null"]
+        },
+        "x82": {
+          "type": ["string", "null"]
+        },
+        "x83": {
+          "type": ["number", "null"]
+        },
+        "x84": {
+          "type": ["number", "null"]
+        },
+        "x85": {
+          "type": ["number", "null"]
+        },
+        "x86": {
+          "type": ["number", "null"]
+        },
+        "x87": {
+          "type": ["number", "null"]
+        },
+        "x88": {
+          "type": ["number", "null"]
+        },
+        "x89": {
+          "type": ["number", "null"]
+        },
+        "x90": {
+          "type": ["number", "null"]
+        },
+        "x91": {
+          "type": ["number", "null"]
+        },
+        "x92": {
+          "type": ["number", "null"]
+        },
+        "x93": {
+          "type": ["number", "null"]
+        },
+        "x94": {
+          "type": ["number", "null"]
+        },
+        "x95": {
+          "type": ["number", "null"]
+        },
+        "x96": {
+          "type": ["number", "null"]
+        },
+        "x97": {
+          "type": ["number", "null"]
+        },
+        "x98": {
+          "type": ["number", "null"]
+        },
+        "x99": {
+          "type": ["number", "null"]
+        }
+      },
+      "required": [
+        "x0",
+        "x1",
+        "x2",
+        "x3",
+        "x4",
+        "x5",
+        "x6",
+        "x7",
+        "x8",
+        "x9",
+        "x10",
+        "x11",
+        "x12",
+        "x13",
+        "x14",
+        "x15",
+        "x16",
+        "x17",
+        "x18",
+        "x19",
+        "x20",
+        "x21",
+        "x22",
+        "x23",
+        "x24",
+        "x25",
+        "x26",
+        "x27",
+        "x28",
+        "x29",
+        "x30",
+        "x31",
+        "x32",
+        "x33",
+        "x34",
+        "x35",
+        "x36",
+        "x37",
+        "x38",
+        "x39",
+        "x40",
+        "x41",
+        "x42",
+        "x43",
+        "x44",
+        "x45",
+        "x46",
+        "x47",
+        "x48",
+        "x49",
+        "x50",
+        "x51",
+        "x52",
+        "x53",
+        "x54",
+        "x55",
+        "x56",
+        "x57",
+        "x58",
+        "x59",
+        "x60",
+        "x61",
+        "x62",
+        "x63",
+        "x64",
+        "x65",
+        "x66",
+        "x67",
+        "x68",
+        "x69",
+        "x70",
+        "x71",
+        "x72",
+        "x73",
+        "x74",
+        "x75",
+        "x76",
+        "x77",
+        "x78",
+        "x79",
+        "x80",
+        "x81",
+        "x82",
+        "x83",
+        "x84",
+        "x85",
+        "x86",
+        "x87",
+        "x88",
+        "x89",
+        "x90",
+        "x91",
+        "x92",
+        "x93",
+        "x94",
+        "x95",
+        "x96",
+        "x97",
+        "x98",
+        "x99"
+      ]
+    }
+}
