@@ -1,4 +1,4 @@
-#!flask/bin/src
+
 """
 Flask application to serve Machine Learning models
 """
@@ -16,8 +16,11 @@ from jsonschema import ValidationError
 
 # Read env variables
 DEBUG = os.environ.get('DEBUG', True)
-ENVIRONMENT = os.environ.get('ENVIRONMENT', 'local')
+HOST = os.environ.get('HOST', 'localhost')
 PORT = os.environ.get('PORT', '1313')
+ENVIRONMENT = os.environ.get('ENVIRONMENT', 'local')
+
+# PORT = os.environ.get('PORT', '1313')
 FILE_NAME = __file__.rsplit(".", 1)[0]
 SERVICE_START_TIMESTAMP = time()
 # Create Flask Application
@@ -36,6 +39,9 @@ app.logger.setLevel(logging.DEBUG if DEBUG else logging.ERROR)
 handler = RotatingFileHandler(f'{FILE_NAME}.log', maxBytes=10000, backupCount=1)
 app.logger.addHandler(handler)
 app.logger.info(f'ENVIRONMENT: {ENVIRONMENT}')
+app.logger.info(f'HOST: {HOST}')
+app.logger.info(f'PORT: {PORT}')
+app.logger.info(f'DEBUG: {DEBUG}')
 app.logger.info('Loading model...')
 
 
@@ -101,5 +107,5 @@ def before_request():
 if __name__ == '__main__':
     app.run(
         debug=DEBUG,
-        host=os.environ.get('HOST', 'localhost'),
-        port=os.environ.get('PORT', '1313'))
+        host=HOST,
+        port=PORT)

@@ -230,5 +230,5 @@ if __name__ == '__main__':
     model_api.save_model(model, 'logit.pkl')
 
     # # Create Test Data
-    raw_data = model_api.test_data
+    raw_data = model_api.test_data[:10]
     raw_data.to_json(JSON_TEST, orient='records', indent=4)
