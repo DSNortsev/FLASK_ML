@@ -17,11 +17,12 @@ DATA_DIR = 'data/'
 TRAIN_DATA_PATH = os.path.join(BASEDIR, DATA_DIR, 'exercise_26_train.csv')
 TEST_DATA_PATH = os.path.join(BASEDIR, DATA_DIR, 'exercise_26_test.csv')
 MODEL_DIR = os.path.join(BASEDIR, 'models/')
-TEST_DIR = os.path.join(BASEDIR, 'test/')
+TEST_DIR = os.path.join(BASEDIR, 'tests/')
+TEST_DATA = os.path.join(TEST_DIR, 'data/')
 METADATA_PATH = os.path.join(BASEDIR, 'models/', 'mld_metadata.json')
 IMPUTER = 'imputer.pkl'
 SCALER = 'std_scaler.pkl'
-JSON_TEST = os.path.join(TEST_DIR, 'data.json')
+JSON_TEST = os.path.join(TEST_DATA, 'data.json')
 
 
 class MODELApi:

@@ -29,7 +29,7 @@ app = Flask(__name__)
 # Declare file path
 basedir = os.path.abspath(os.path.dirname(__file__))
 models_dir = os.path.join(basedir, 'models')
-json_schema_dir = basedir + '/test/schema.json'
+json_schema_dir = basedir + '/tests/data/schema.json'
 schema = read_json(json_schema_dir)
 # Load Logistic Regression model
 model = MODELApi.import_model('logit.pkl')
