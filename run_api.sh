@@ -12,4 +12,4 @@ docker rmi -f $(docker images | grep ${APP} | awk '{print $3}')
 docker build -t ${APP} .
 
 # Run Flask app in docker container
-docker run -i -d -p 1313:1313 -e HOST=0.0.0.0 -e DEBUG=False ${APP}
+docker run -i -d -p 1313:1313 ${APP}

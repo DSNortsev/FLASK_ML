@@ -2,7 +2,6 @@ import os
 import requests
 from utils import read_json
 
-
 # Declare file path
 basedir = os.path.abspath(os.path.dirname(__file__))
 json_data = basedir + '/tests/data/data.json'

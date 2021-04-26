@@ -1,4 +1,3 @@
-
 """
 Flask application to serve Machine Learning models
 """
@@ -14,17 +13,12 @@ from utils import read_json
 from flask_expects_json import expects_json
 from jsonschema import ValidationError
 
-# Read env variables
-DEBUG = os.environ.get('DEBUG', True)
-HOST = os.environ.get('HOST', 'localhost')
-PORT = os.environ.get('PORT', '1313')
-ENVIRONMENT = os.environ.get('ENVIRONMENT', 'local')
 
-# PORT = os.environ.get('PORT', '1313')
 FILE_NAME = __file__.rsplit(".", 1)[0]
 SERVICE_START_TIMESTAMP = time()
 # Create Flask Application
 app = Flask(__name__)
+app.config.from_pyfile("./config.py")
 
 # Declare file path
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -35,13 +29,12 @@ schema = read_json(json_schema_dir)
 model = MODELApi.import_model('logit.pkl')
 
 
-app.logger.setLevel(logging.DEBUG if DEBUG else logging.ERROR)
+app.logger.setLevel(logging.DEBUG if app.config["DEBUG"] else logging.ERROR)
 handler = RotatingFileHandler(f'{FILE_NAME}.log', maxBytes=10000, backupCount=1)
 app.logger.addHandler(handler)
-app.logger.info(f'ENVIRONMENT: {ENVIRONMENT}')
-app.logger.info(f'HOST: {HOST}')
-app.logger.info(f'PORT: {PORT}')
-app.logger.info(f'DEBUG: {DEBUG}')
+app.logger.info(f'ENVIRONMENT: {app.config["ENVIRONMENT"]}')
+app.logger.info(f'PORT: {app.config["PORT"]}')
+app.logger.info(f'DEBUG: {app.config["DEBUG"]}')
 app.logger.info('Loading model...')
 
 
@@ -89,12 +82,12 @@ def predict():
 
     return jsonify(response_json)
 
+
 @app.before_request
 def before_request():
     app.logger.debug('\nREQUEST:')
     app.logger.debug('Headers: %s', request.headers)
     app.logger.debug('Body: %s', request.get_data())
-
 
 # @app.after_request
 # def after_request(response):
@@ -106,6 +99,6 @@ def before_request():
 
 if __name__ == '__main__':
     app.run(
-        debug=DEBUG,
-        host=HOST,
-        port=PORT)
+        debug=app.config["DEBUG"],
+        host="0.0.0.0",
+        port=app.config["PORT"])
