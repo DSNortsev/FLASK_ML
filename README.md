@@ -1,7 +1,6 @@
 # Deploying Flask application with gunicorn and docker containers
 
     .
-    ├── ...
     ├── data                         
     │   ├── exercise_26_test.csv    # Test data
     │   └── exercise_26_train.csv   # Train data
