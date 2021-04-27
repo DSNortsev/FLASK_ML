@@ -39,7 +39,8 @@ class MODELApi:
         if not inplace:
             # Create deep copy when inplace set to False
             data = df.copy(deep=True)
-        data = df
+        else:
+            data = df
 
         col_fix = {'x12': [('$', ''), (',', ''), (')', ''), ('(', '-')],
                    'x63': [('%', '')]}
@@ -55,9 +56,6 @@ class MODELApi:
             imputer.fit(df)
         else:
             imputer = self.import_model(IMPUTER)
-        # print(df[0])
-        # print(len(imputer.fit_transform(df)[0]))
-        # print(len(df.columns))
         df_imputed = pd.DataFrame(imputer.transform(df),
                                   columns=df.columns)
 
