@@ -1,6 +1,7 @@
 import os
 import pytest
 from model import MODELApi
+from service import app
 
 # Model directory structure
 BASEDIR = os.path.abspath(os.path.dirname('__file__'))
@@ -18,3 +19,12 @@ def new_model_api():
 @pytest.fixture(scope='module')
 def class_model_api():
     return MODELApi
+
+
+@pytest.fixture(scope='module')
+def service_app():
+    # Create a test client using the Flask application
+    with app.test_client() as testing_client:
+        # Establish an application context
+        with app.app_context():
+            yield testing_client
